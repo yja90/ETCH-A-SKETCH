@@ -10,9 +10,8 @@ createGrid(16, '2.5vw')
 
 // creates Grid and assigns the correct style
 function createGrid(gridSize, style) {
-  for (i = 0; i < (gridSize * gridSize); i++) {
+  for (i = 0; i < (gridSize * gridSize); ++i) {
     grid = document.createElement('div')
-    // rows.setAttribute("id", "mainGrid");
     mainContainer.appendChild(grid).className = 'row';
     grid.style.width = style
     grid.style.height = style
@@ -29,7 +28,7 @@ function createGrid(gridSize, style) {
 function randomColors(){
   let colors = ['#ff0000', '#00ff00', '#0000ff'];
   random_color = colors[Math.floor(Math.random() * colors.length)];
-  // return (random_color, colors[random_color]);
+  return (random_color, colors[random_color]);
 }
 
 //why can't I use function? Why do I have to use random_color? Should I remove it from a function
