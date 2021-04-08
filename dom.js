@@ -36,7 +36,7 @@ function randomColors(){
 //Function to change background color of div elements
 function changeColor(){
   let randomColor = randomColors()
-  this.style.backgroundColor = randomColor
+  this.style.backgroundColor = random_color
 }
 
 
