@@ -16,7 +16,7 @@ function createGrid(gridSize, style) {
     mainContainer.appendChild(grid).className = 'row';
     grid.style.width = style
     grid.style.height = style
-    for (i = 0; i < gridColor.length; i++){
+    for (i = 0; i < gridColor.length; ++i){
       gridColor[i].addEventListener('mouseover',changeColor)
     }
   }
@@ -29,13 +29,12 @@ function createGrid(gridSize, style) {
 function randomColors(){
   let colors = ['#ff0000', '#00ff00', '#0000ff'];
   random_color = colors[Math.floor(Math.random() * colors.length)];
-  return (random_color, colors[random_color]);
+  // return (random_color, colors[random_color]);
 }
 
-
+//why can't I use function? Why do I have to use random_color? Should I remove it from a function
 //Function to change background color of div elements
 function changeColor(){
-  let randomColor = randomColors()
   this.style.backgroundColor = random_color
 }
 
