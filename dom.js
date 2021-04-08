@@ -35,6 +35,7 @@ function randomColors(){
 //why can't I use function? Why do I have to use random_color? Should I remove it from a function
 //Function to change background color of div elements
 function changeColor(){
+  let randomColor = randomColors()
   this.style.backgroundColor = random_color
 }
 
