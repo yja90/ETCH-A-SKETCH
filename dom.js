@@ -25,17 +25,17 @@ function createGrid(gridSize, style) {
 
 //random colors aren't working, why not?
 
-function randomColors(){
-  let colors = ['#ff0000', '#00ff00', '#0000ff'];
-  random_color = colors[Math.floor(Math.random() * colors.length)];
-  return (random_color, colors[random_color]);
-}
+// function randomColors(){
+//   let colors = ['#ff0000', '#00ff00', '#0000ff'];
+//   random_color = colors[Math.floor(Math.random() * colors.length)];
+//   return (random_color, colors[random_color]);
+// }
 
 //why can't I use function? Why do I have to use random_color? Should I remove it from a function
 //Function to change background color of div elements
 function changeColor(){
   let randomColor = randomColors()
-  this.style.backgroundColor = random_color
+  this.style.backgroundColor = 'red'
 }
 
 
