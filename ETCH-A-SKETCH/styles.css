@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.mainContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40vw;
+  height: 40vw;
+  top: 10%;
+  padding: 0;
+  border: 5px solid;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  outline: solid 1px;
+  display: inline-grid;
+  width: 2.5vw;
+  height: 2.5vw;
+  float: left;
+}
+
+
+.newColor {
+  background-color: black;
+}
+
+/* 40 / 64,32,16 will give the width and height of each div
