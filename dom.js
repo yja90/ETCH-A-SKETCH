@@ -3,40 +3,35 @@ let grid
 let gridSize = 0
 let totalGridSize
 let gridColor = document.getElementsByClassName('row')
-let random_color
+// let random_color
 
 createGrid(16, '2.5vw')
+
 
 
 // creates Grid and assigns the correct style
 function createGrid(gridSize, style) {
   for (i = 0; i < (gridSize * gridSize); ++i) {
     grid = document.createElement('div')
+    // rows.setAttribute("id", "mainGrid");
     mainContainer.appendChild(grid).className = 'row';
     grid.style.width = style
     grid.style.height = style
-    for (i = 0; i < gridColor.length; ++i){
-      gridColor[i].addEventListener('mouseover',changeColor)
-    }
+    gridColor[i].addEventListener('mouseover', changeColor)
   }
   totalGridSize = mainContainer.childElementCount
 }
 
 
-//random colors aren't working, why not?
-
-// function randomColors(){
-//   let colors = ['#ff0000', '#00ff00', '#0000ff'];
-//   random_color = colors[Math.floor(Math.random() * colors.length)];
-//   return (random_color, colors[random_color]);
-// }
-
-//why can't I use function? Why do I have to use random_color? Should I remove it from a function
 //Function to change background color of div elements
-function changeColor(){
-  let randomColor = randomColors()
-  this.style.backgroundColor = 'red'
+function changeColor() {
+  let colors = ['#ff3366', '#ff6633', '#FFCC33', '#33FF66', '#33FFCC', '#33CCFF', '#3366FF', '#6633FF', '#CC33FF'];
+  let random_color = colors[Math.floor(Math.random() * colors.length)];
+  this.style.backgroundColor = random_color
+
 }
+
+
 
 
 // function to clear grid
